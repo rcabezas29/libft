@@ -1,15 +1,14 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: rcabezas <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/11/07 15:53:33 by rcabezas          #+#    #+#              #
-#    Updated: 2019/12/10 11:59:31 by rcabezas         ###   ########.fr        #
+#    Created: 2020/07/21 09:02:58 by rcabezas          #+#    #+#              #
+#    Updated: 2021/03/11 09:43:13 by rcabezas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 
 NAME = libft.a
 
@@ -20,36 +19,34 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c\
       ft_isprint.c ft_toupper.c ft_tolower.c ft_calloc.c ft_strdup.c\
 	  ft_strjoin.c ft_substr.c ft_split.c ft_strtrim.c ft_itoa.c\
 	  ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c\
-	  ft_putnbr_fd.c ft_putchar.c ft_isupper.c
+	  ft_putnbr_fd.c ft_putchar.c ft_isupper.c get_next_line.c \
+	  ft_numlen.c ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
+	  ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c \
+	  ft_lstsize.c ft_atof.c  get_next_line.c ft_strcmp.c
 
-BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
-        ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
-        ft_lstclear_bonus.c ft_lstiter_bonus.c  ft_lstmap_bonus.c
+SRCS = $(addprefix $(SRCS_FOLDER)/, $(SRC))
 
 RM = rm -f
 
-CFLAGS = -Wall -Wextra -Werror -I
-INCLUDES = ./
+CFLAGS = -Wall -Wextra -Werror
 
-OBJ = $(SRC:.c=.o)
+SRCS_FOLDER = srcs
 
-BOBJ = $(BONUS:.c=.o)
+INCLUDES = includes
 
-$(NAME):$(SRCS) libft.h
-	@gcc $(CFLAGS) $(INCLUDES) -c $(SRC)
+OBJ = $(SRCS:.c=.o)
+
+$(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
-bonus:
-	@gcc $(CFLAGS) -g -c $(BONUS) $(SRC)
-	@ar rc $(NAME) $(BOBJ) $(OBJ)
-	@ranlib $(NAME)
+%.o: %.c
+	@gcc $(CFLAGS) -o $@ -c $<  -I $(INCLUDES) 
 
 all: $(NAME)
 
 clean:
 	@$(RM) $(OBJ)
-	@$(RM) $(BOBJ)
 
 fclean:     clean
 	@$(RM) $(NAME)
