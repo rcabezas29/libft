@@ -6,7 +6,7 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 19:00:20 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/06/07 21:04:36 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/06/07 21:16:52 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int				ft_isascii(int c);
 int				ft_isprint(int c);
 int				ft_isupper(int c);
 int				ft_toupper(int c);
-char			ft_tolower(char c);
+int				ft_tolower(int c);
 char			*ft_strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
 int				ft_strncmp(const char *str1, const char *str2, size_t n);
