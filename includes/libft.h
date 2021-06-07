@@ -6,7 +6,7 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 19:00:20 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/03/11 09:41:46 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/06/07 21:04:36 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,5 @@ int				ft_isupper(int c);
 void			ft_putstr(char *s);
 int				ft_numlen(int i);
 int				ft_strcmp(char *s1, char *s2);
+char			*ft_strcpy(char *dest, char *src);
 #endif
