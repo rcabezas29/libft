@@ -22,5 +22,6 @@ void    *ft_realloc(void *ptr, size_t size)
 		return (ptr);
 	new = malloc(size);
 	ft_memcpy(new, ptr, size);
+	free(ptr);
 	return (new);
 }
