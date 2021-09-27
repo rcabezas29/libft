@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_realloc.c                                       :+:      :+:    :+:   */
+/*   ft_lsterase.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/18 13:52:31 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/09/23 11:27:25 by rcabezas         ###   ########.fr       */
+/*   Created: 2021/09/27 09:54:44 by rcabezas          #+#    #+#             */
+/*   Updated: 2021/09/27 10:11:20 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_realloc(void *ptr, size_t size)
+void	ft_lsterase(t_list *list)
 {
-	void	*new;
+	t_list	*aux;
 
-	if (!ptr)
-		return (ft_calloc(size, 1));
-	if (size == 0)
-		return (ptr);
-	new = ft_calloc(size, 1);
-	ft_memcpy(new, ptr, size);
-	free(ptr);
-	return (new);
+	while (list)
+	{
+		aux = list;
+		list = list->next;
+		free(aux->content);
+		free(aux);
+		aux = NULL;
+	}
 }
