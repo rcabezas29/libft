@@ -77,7 +77,7 @@ void			ft_putstr(char *s);
 int				ft_numlen(int i);
 int				ft_strcmp(char *s1, char *s2);
 char			*ft_strcpy(char *dest, char *src);
-void			free_double_ptr(void **s);
+void			free_double_ptr(char **s);
 void			*ft_realloc(void *ptr, size_t size);
 void			ft_strdowncase(char *str);
 int				ft_matrixlen(void **arr);
