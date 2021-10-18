@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-void	free_double_ptr(void **s)
+void	free_double_ptr(char **s)
 {
 	int	i;
 
