@@ -6,7 +6,7 @@
 #    By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/07/21 09:02:58 by rcabezas          #+#    #+#              #
-#    Updated: 2021/10/18 15:58:24 by rcabezas         ###   ########.fr        #
+#    Updated: 2021/10/18 16:42:00 by rcabezas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,8 +23,8 @@ SRC = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c ft_memmove.c ft_memchr.c\
 	  ft_numlen.c ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c \
 	  ft_lstdelone.c ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c \
 	  ft_lstsize.c ft_atof.c  get_next_line.c ft_strcmp.c ft_strcpy.c \
-	  ft_putstr.c free_double_ptr.c ft_realloc.c ft_strdowncase.c \
-	  ft_matrixlen.c ft_strdowncase.c
+	  ft_putstr.c ft_realloc.c ft_strdowncase.c \
+	  ft_matrixlen.c ft_strdowncase.c ft_freematrix.c
 
 SRCS = $(addprefix $(SRCS_FOLDER)/, $(SRC))
 

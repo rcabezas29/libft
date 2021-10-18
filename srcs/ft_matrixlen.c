@@ -6,13 +6,13 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 15:54:06 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/10/18 15:56:07 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/10/18 16:16:23 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_matrixlen(void **arr)
+int	ft_matrixlen(char **arr)
 {
 	int	i;
 	
