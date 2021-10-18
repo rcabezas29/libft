@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdowncase.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/05 17:37:33 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/10/18 15:56:53 by rcabezas         ###   ########.fr       */
+/*   Created: 2021/10/18 15:28:13 by rcabezas          #+#    #+#             */
+/*   Updated: 2021/10/18 15:41:43 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+void	ft_strdowncase(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i])
+	{
+		str[i] = ft_tolower(str[i]);
 		i++;
-	return (i);
+	}
 }

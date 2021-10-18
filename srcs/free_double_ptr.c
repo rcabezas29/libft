@@ -6,13 +6,13 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/27 13:32:51 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/08/27 13:36:43 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/10/18 15:55:52 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	free_double_ptr(char **s)
+void	free_double_ptr(void **s)
 {
 	int	i;
 

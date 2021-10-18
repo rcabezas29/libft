@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_matrix_len.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/05 17:37:33 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/10/18 15:56:53 by rcabezas         ###   ########.fr       */
+/*   Created: 2021/10/18 15:54:06 by rcabezas          #+#    #+#             */
+/*   Updated: 2021/10/18 15:56:07 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+int	ft_matrixlen(void **arr)
 {
 	int	i;
-
+	
 	i = 0;
-	while (str[i])
+	while (arr[i])
 		i++;
 	return (i);
 }
