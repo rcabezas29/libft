@@ -6,7 +6,7 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/08 19:00:20 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/10/19 22:02:41 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/10/20 10:12:53 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,5 @@ void			*ft_realloc(void *ptr, size_t size);
 void			ft_strdowncase(char *str);
 int				ft_matrixlen(char **arr);
 char			**ft_matrixdup(char **arr);
+char			*ft_strtok(const char *str, char c);
 #endif
