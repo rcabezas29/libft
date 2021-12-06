@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcabezas <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 18:19:51 by rcabezas          #+#    #+#             */
-/*   Updated: 2019/11/26 18:03:53 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/12/06 21:56:10 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	p = (unsigned char *)dst;
 	q = (unsigned char *)src;
 	i = 0;
-	if ((int)p == '\0' && (int)q == '\0')
+	if (*p == '\0' && *q == '\0')
 		return (dst);
 	else
 	{

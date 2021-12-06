@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcabezas <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/09 14:29:47 by rcabezas          #+#    #+#             */
-/*   Updated: 2019/11/26 18:06:27 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/12/06 21:56:24 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	char	*small;
 	char	*big;
 
-	small = (char *)needle;
 	big = (char *)haystack;
 	i = 0;
 	j = 0;

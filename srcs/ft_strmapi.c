@@ -6,7 +6,7 @@
 /*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/14 20:00:42 by rcabezas          #+#    #+#             */
-/*   Updated: 2021/03/11 12:41:53 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/12/06 21:58:01 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*fstr;
 	unsigned int	i;
-	int				j;
 
 	i = 0;
 	if (!s)
@@ -24,7 +23,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	fstr = (char *)malloc(ft_strlen(s) + 1);
 	if (!fstr)
 		return (0);
-	j = ft_strlen((char *)s);
 	while (s[i])
 	{
 		fstr[i] = f(i, s[i]);

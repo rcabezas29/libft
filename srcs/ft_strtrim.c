@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rcabezas <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: rcabezas <rcabezas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 18:17:26 by rcabezas          #+#    #+#             */
-/*   Updated: 2019/12/10 15:42:15 by rcabezas         ###   ########.fr       */
+/*   Updated: 2021/12/06 21:57:39 by rcabezas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*a;
 	size_t	len;
 
-	if (s1 == '\0' || set == '\0')
+	if (s1 == NULL || set == NULL)
 		return (0);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
