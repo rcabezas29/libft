@@ -23,7 +23,7 @@ char	**ft_matrixdup(char **arr)
 	{
 		ret[i] = ft_strdup(arr[i]);
 		i++;
-		ret[i] = NULL;
 	}
+	ret[i] = NULL;
 	return (ret);
 }
